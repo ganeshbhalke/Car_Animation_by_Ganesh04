@@ -1,0 +1,95 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	
+}
+body{
+	overflow-x:hidden;
+}
+
+.container{
+	height:90vh;
+	
+	/* background-image: url('https://media.istockphoto.com/id/1278553853/vector/bus-stop-on-main-street-city-public-park-with-bench-and-bus-stop-with-nature-landscape.jpg?s=1024x1024&w=is&k=20&c=LM8YRVUeAVYQeLeuS1yqjGNY5rrMV9cDBxfS9AcY3fI='); */
+	/* background-image: url('D:/rivision all/test animation/assets/image/back.png'); */
+	/* background-image: url('D:/rivision all/test animation/assets/image/back.png'); */
+	background-image: url('../image/back.png');
+
+	background-size:100% 100%;
+	
+
+}
+
+.container-sm{
+	height:30vh;
+	/* margin-top:-30vh; */
+	background-repeat:no-repeat;
+	
+}
+
+.container-md{
+	position:absolute;
+	
+	top:20vh;
+	width:100%	
+}
+
+.plain{
+	animation-name:carAni;
+	animation-duration:10s;
+	animation-iteration-count:infinite;
+	animation-duration:normal;
+	animation-timing-function:linear;
+	height:50px;
+  position: absolute;
+  /* left: -20%; */
+  width: 200px;
+  top:-80px;
+  animation: minusani 8s linear infinite;
+	
+}
+
+.crow{
+		animation-name:carAni;
+	animation-duration:10s;
+	animation-iteration-count:infinite;
+	animation-duration:normal;
+	animation-timing-function:linear;
+	height:80px;
+  position: absolute;
+  top:0;
+  /* left: -20%; */
+  width: 200px;
+  
+  animation: minusani 20s linear infinite;
+	
+}
+
+.Car{
+	
+	  position: absolute;
+	  top: 53vh;
+	  width:300px;
+     animation: carAni 7s linear infinite;
+}
+
+
+@keyframes carAni{
+	0%{
+		margin-left:-20%;
+	}
+	100%{
+		margin-left:100%;
+	}
+}
+
+
+@keyframes minusani{
+	0%{
+		margin-left:100%;
+	}
+	100%{
+		margin-left:-20%;
+	}
+}
